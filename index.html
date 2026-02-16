@@ -53,23 +53,26 @@
             <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: 2427030720</div>
             <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">CampusKart</span></h1>
             <p class="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
-                "Hypothesis/Project Statement: Define the core research question or the primary objective of your development project."
+                "project statement: The core objective of this development project is to design and implement a secure, campus exclusive digital marketplace that enables students to buy, sell, and rent items within their hostel ecosystem. The hypothesis behind this project is that a structured and verified platform can significantly reduce resource wastage, lower student expenses, and improve accessibility to goods by facilitating intra‑campus transactions."
             </p>
         </section>
 
         <section id="problem" class="grid md:grid-cols-2 gap-12 items-stretch">
             <div class="glass p-10 rounded-[2.5rem] flex flex-col justify-center border-l-4 border-blue-600">
                 <h2 class="text-3xl font-extrabold mb-6">Problem Statement</h2>
-                <p class="text-slate-400 leading-relaxed text-justify">Describe the specific challenge you are addressing. Why is this project necessary?</p>
+                <p class="text-slate-400 leading-relaxed text-justify">Students often buy items that are needed only for a short time, such as books, clothes, and daily use products. These items are later wasted or discarded when students move out, while others still need them.​
+                    There is no simple, trusted platform within student communities to rent, buy, or sell these items efficiently.</p>
             </div>
             <div class="space-y-6">
                 <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
-                    <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Literature Review / Market Research</h3>
-                    <p class="text-sm text-slate-500 italic">Summary of existing solutions or research papers analyzed.</p>
+                    <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Market Research</h3>
+                    <p class="text-sm text-slate-500 italic">By performing market research and finding current existing similar platforms, we found Thrifts, which primarily focus on clothing exchange and do not support a broader range of items. While this platform successfully promote sustainable fashion, it lacks a comprehensive marketplace where users can buy, sell, or exchange other campus essentials like books, gadgets, and accessories. This limitation highlights the need for a more inclusive, student‑centric platform that supports multiple product categories within a single site.</p>
                 </div>
                 <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
-                    <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">Research Gap / Innovation</h3>
-                    <p class="text-sm text-slate-500 italic">What makes your approach different or better than the State-of-the-Art?</p>
+                    <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">Innovation</h3>
+                    <p class="text-sm text-slate-500 italic">Most existing resale or thrift platforms lack multiple categories. This creates a gap where students still struggle to buy, sell, or exchange academic and daily‑use items conveniently.
+                        Our project bridges this gap by introducin  a scalable, inclusive, and efficient marketplace that aligns with real student needs. Unlike traditional resale platforms, this system enables seamless exchange of books, gadgets, stationery, clothing, and other essentials within a trusted campus network.
+                        The innovation lies in: Multi‑category listings instead of single‑category resale, Simplified and intuitive interface tailored for campus users, promoting affordability and sustainability</p>
                 </div>
             </div>
         </section>
@@ -80,46 +83,61 @@
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Dataset / Input</h3>
-                    <p class="text-sm text-slate-500">[Source, size, and preprocessing details]</p>
+                    <p class="text-sm text-slate-500">Source:</p>
+                    <p class="text-sm text-slate-500">The system uses user-generated data collected directly through the CampusKart platform. This includes student listings, product details, user profiles, and transaction-related inputs. All data originates from registered campus users interacting with the website, ensuring relevance to the college marketplace environment. </p>
+                    <p class="text-sm text-slate-500">Size:</p>
+                    <p class="text-sm text-slate-500">The dataset size is dynamic and scalable, depending on the number of active users and listings. Initially, the system is designed to handle hundreds of product entries and user records, with architecture optimized to support growth as adoption increases.                                                           
+                    <p class="text-sm text-slate-500">Preprocessing:</p>
+                    <p class="text-sm text-slate-500">
+                        Before storing and displaying data, several preprocessing steps are applied:
+                        Input validation to ensure correct formats (price, category, contact details)
+                        Removal of invalid or incomplete entries
+                        Standardization of product categories and descriptions
+                        Security filtering to prevent malicious or harmful input
+                        These steps ensure data consistency, usability, and platform reliability.
+                    </p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-microchip text-purple-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Model / Architecture</h3>
-                    <p class="text-sm text-slate-500">[Algorithms used or System Workflow]</p>
+                    <p class="text-sm text-slate-500">The CampusKart system follows a modular web‑based architecture designed to support efficient listing, browsing, and communication between student buyers and sellers. The architecture is divided into frontend, backend, and database layers to ensure scalability, maintainability, and smooth data flow.
+                        The frontend interface allows users to create listings, search products, and manage profiles through an intuitive user interface. The backend processes user requests, validates data, and manages transactions securely. The database stores user records, product information, and interaction data in an organized structure.
+                        
+                        <p class="text-sm text-slate-500">System Workflow:</p>
+                        <p class="text-sm text-slate-500">1 A user registers/logs into the platform.</p>
+                        <p class="text-sm text-slate-500">2 Sellers upload product details such as category, price, and description.</p>
+                        <p class="text-sm text-slate-500">3 The backend validates and stores the data.</p>
+                        <p class="text-sm text-slate-500">4 Buyers browse or search listings using filters.</p>
+                        <p class="text-sm text-slate-500">5 Communication or transaction initiation occurs through the platform.</p>
+                        <p class="text-sm text-slate-500">6 Data updates dynamically to reflect listing status.
+                        This layered workflow ensures efficient data handling, fast response time, and a reliable marketplace experience.</p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
                     <i class="fab fa-python text-green-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-4 uppercase text-xs tracking-widest text-green-400">Live Execution</h3>
-                    <a href="[LINK]" target="_blank" class="px-6 py-2 bg-green-600 rounded-full text-[10px] font-black hover:bg-green-500 transition shadow-lg shadow-green-900/40">VIEW CODE / DEMO</a>
+                    <a href="https://akshatsah04.github.io/campuskart/" target="_blank" class="px-6 py-2 bg-green-600 rounded-full text-[10px] font-black hover:bg-green-500 transition shadow-lg shadow-green-900/40">VIEW CODE / DEMO</a>
                 </div>
             </div>
         </section>
 
-        <section id="results" class="glass p-12 rounded-[3.5rem] border-t-4 border-blue-500">
-            <h2 class="text-3xl font-black mb-12 text-center uppercase tracking-tight">Results & <span class="text-blue-500">Analysis</span></h2>
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="h-80"><canvas id="resultsChart"></canvas></div>
-                <div class="space-y-6">
-                    <div class="p-6 rounded-2xl bg-white/5 flex justify-between items-center border border-white/10 shadow-inner">
-                        <span class="text-slate-400 font-bold uppercase text-xs tracking-widest">Accuracy / Performance</span>
-                        <span class="text-blue-400 font-mono font-black text-3xl">XX.X%</span>
-                    </div>
-                    <p class="text-slate-500 text-sm italic text-justify leading-relaxed">Quantifiable outcomes and evaluation metrics compared to baselines.</p>
-                </div>
-            </div>
-        </section>
+
 
         <section id="team" class="text-center pt-10 border-t border-slate-900">
             <h2 class="text-[10px] font-black text-slate-600 uppercase tracking-[0.5em] mb-12">Academic Credits</h2>
             <div class="flex flex-wrap justify-center gap-10">
                 <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-blue-600">
                     <p class="text-[9px] font-bold text-blue-500 mb-2 uppercase tracking-widest">Project Guide</p>
-                    <p class="font-black text-xl text-slate-100">[Guide Name]</p>
+                    <p class="font-black text-xl text-slate-100">Mr. Arvind Kumar Mehta</p>
                 </div>
                 <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-slate-700">
                     <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase tracking-widest">Team Member 1</p>
-                    <p class="font-black text-xl text-slate-100">[Student Name]</p>
-                    <p class="text-[10px] text-slate-500 mt-1">[Reg No]</p>
+                    <p class="font-black text-xl text-slate-100">Akshat Kumar</p>
+                    <p class="text-[10px] text-slate-500 mt-1">2427030298</p>
+                </div>
+                <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-slate-700">
+                    <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase tracking-widest">Team Member 2</p>
+                    <p class="font-black text-xl text-slate-100">Chinmayee Khanna</p>
+                    <p class="text-[10px] text-slate-500 mt-1">2427030720</p>
                 </div>
             </div>
         </section>
